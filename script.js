@@ -9,7 +9,7 @@ async function getvideos(){
         
         response.data.data.forEach(element => {
             let title=element.items.snippet.title;
-            let thumbnail=element.items.snippet.thumbnails.default.url;
+            let thumbnail=element.items.snippet.thumbnails.standard.url;
             let ctitle=element.items.snippet.channelTitle;
 
             let div=document.createElement("div");
